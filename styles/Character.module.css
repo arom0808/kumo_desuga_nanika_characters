@@ -1,0 +1,76 @@
+.characterPageMain {
+    display: grid;
+    grid-template-areas:
+                       "main-photo main-photo main-photo main-photo short-desc short-desc short-desc short-desc titles titles titles titles"
+                       "main-photo main-photo main-photo main-photo short-desc short-desc short-desc short-desc nicknames nicknames nicknames nicknames"
+                       "belonging belonging belonging belonging relations relations relations relations race race race race"
+                       "occupation occupation occupation occupation relations relations relations relations race race race race"
+                       "quote quote quote quote quote quote quote quote quote quote quote quote"
+                       "ages ages ages ages . . . . average-parameters average-parameters average-parameters average-parameters"
+                       "ages ages ages ages . . . . average-parameters average-parameters average-parameters average-parameters"
+                       "additional-photo-1 additional-photo-1 additional-photo-1 additional-photo-2 additional-photo-2 additional-photo-2 additional-photo-3 additional-photo-3 additional-photo-3 additional-photo-4 additional-photo-4 additional-photo-4";
+    grid-auto-rows: auto;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+}
+
+.mainPhoto {
+    grid-area: main-photo;
+}
+
+.shortDesc {
+    grid-area: short-desc;
+}
+
+.titles {
+    grid-area: titles;
+}
+
+.nicknames {
+    grid-area: nicknames;
+}
+
+.belonging {
+    grid-area: belonging;
+}
+
+.relations {
+    grid-area: relations;
+}
+
+.race {
+    grid-area: race;
+}
+
+.occupation {
+    grid-area: occupation;
+}
+
+.quote {
+    grid-area: quote;
+}
+
+.ages {
+    grid-area: ages;
+}
+
+.averageParameters {
+    grid-area: average-parameters;
+}
+
+.additionalPhoto1 {
+    grid-area: additional-photo-1;
+}
+
+.additionalPhoto2 {
+    grid-area: additional-photo-2;
+}
+
+.additionalPhoto3 {
+    grid-area: additional-photo-3;
+}
+
+.additionalPhoto4 {
+    grid-area: additional-photo-4;
+}

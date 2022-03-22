@@ -1,6 +1,6 @@
 import type {GetStaticProps, NextPage} from 'next'
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Character.module.css'
 import CharactersGroup from "../components/CharactersGroup";
 import {charactersGroups} from "../support/data";
 

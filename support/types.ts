@@ -1,10 +1,16 @@
-export type CharacterProfileDB = { status: string, affiliation: string[], occupation: string[], relations: { [key: string]: string } };
-
-export type CharacterCharacteristicsDB = { race: string[], sex: boolean, age: string[], hairColor: string, eyeColor: string };
-
-export type CharacterParametersDB = { titles: string[], sobriquets: string[], profile: CharacterProfileDB, characteristics: CharacterCharacteristicsDB }
-
-export type CharacterDB = { name: string, desc: string, appearance: string, personality: string, parameters: CharacterParametersDB };
+export type CharacterDB = {
+    name: string,
+    shortDesc: string,
+    titles: string[],
+    nicknames: string[],
+    belonging: string[],
+    relations: { [characterId: string]: string },
+    race: string[],
+    occupation: string[],
+    quote: string,
+    ages: { [value: number]: string },
+    averageParameters: { name: string, value: number }[]
+};
 
 export type CharactersSetDB = { [key: string]: CharacterDB };
 
